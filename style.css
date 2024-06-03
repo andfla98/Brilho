@@ -1,0 +1,232 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe6f2;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ff66b2;
+    color: #fff;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h3 {
+    margin: 0;
+    padding-left: 2rem;
+    font-family: 'baby';
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav li {
+    margin-right: 2rem;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Seção Lista de Roupas */
+.lista-roupas {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.lista-roupas h2 {
+    margin-bottom: 1rem;
+    color: #ff66b2;
+}
+
+.lista-roupas ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px;
+}
+
+.roupa-item {
+    background-color: #ffccff;
+    border: 1px solid #ff99cc;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+}
+
+.roupa-item h3 {
+    margin-top: 0;
+}
+
+.roupa-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+.roupa-item p {
+    margin-bottom: 0.5rem;
+}
+
+.roupa-item strong {
+    font-weight: bold;
+}
+
+.adicionar-ao-carrinho {
+    background-color: #ff66b2;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block; 
+    margin: 1rem auto; 
+}
+
+.adicionar-ao-carrinho:hover {
+    background-color: #ff3399;
+}
+
+/* Botão Adicionar Roupa */
+.abrir-modal {
+    background-color: #ff66b2;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block; 
+    margin: 2rem auto; 
+    font-size: 1.2rem;
+}
+
+.abrir-modal:hover {
+    background-color: #ff3399;
+}
+
+/* Modal Adicionar Roupa */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%; 
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.fechar-modal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.fechar-modal:hover,
+.fechar-modal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#itens-carrinho {
+    list-style: none;
+    padding: 0;
+}
+
+#itens-carrinho li {
+    margin-bottom: 10px;
+}
+
+#total-carrinho {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Estilos do Modal Adicionar Roupa */
+.form-roupa {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-roupa label {
+    margin-bottom: 0.5rem;
+}
+
+.form-roupa input,
+.form-roupa textarea {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-roupa textarea {
+    resize: vertical;
+}
+
+.form-roupa button {
+    background-color: #ff66b2;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+}
+
+.form-roupa button:hover {
+    background-color: #ff3399;
+}
+
+/* Rodapé */
+footer {
+    background-color: #ff66b2;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Adicionando Fonte */
+@font-face {
+    font-family: 'baby';
+    src: url(font/Starborn.otf);
+}

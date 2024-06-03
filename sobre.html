@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - Brilho de Princesa</title>
+    <link rel="shortcut icon" href="icon/roupa-feminina.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe6f2;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff66b2;
+            color: #fff;
+            padding: 1rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h3 {
+            margin: 0;
+            padding-left: 2rem;
+            font-family: 'baby';
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        header nav li {
+            margin-right: 2rem;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .sobre-nos {
+            background-color: #fff;
+            padding: 2rem;
+            margin: 1rem auto;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .sobre-nos h2 {
+            margin-bottom: 1rem;
+            color: #ff66b2;
+            text-align: center;
+        }
+
+        .sobre-nos h2 {
+            color: #ff66b2;
+            text-align: center;
+        }
+
+        .sobre-nos p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #ff66b2;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header h1 {
+                padding-left: 0;
+                margin-bottom: 1rem;
+            }
+
+            header nav ul {
+                justify-content: center;
+            }
+
+            header nav li {
+                margin-right: 1rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .sobre-nos {
+                padding: 1rem;
+                margin: 0.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header nav li {
+                margin-right: 0.5rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .sobre-nos {
+                padding: 1rem;
+                margin: 0.5rem;
+            }
+        }
+
+        /*adcionando fonte*/
+        @font-face {
+            font-family:'baby';
+            src: url(font/Starborn.otf);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>Brilho de Princesa</h3>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="sobre-nos">
+            <h2>Sobre Nós</h2>
+            <p>A Brilho de Princesa nasceu do desejo de trazer moda acessível e de alta qualidade para mulheres que desejam expressar sua individualidade e beleza. Fundada em 2020, nossa loja se destacou rapidamente no mercado pela seleção cuidadosa de peças e pelo atendimento personalizado que oferecemos a cada cliente.</p>
+            <p>Nossa missão é proporcionar uma experiência de compra única, onde cada mulher se sinta uma verdadeira princesa. Trabalhamos com fornecedores selecionados para garantir que cada roupa, acessório e produto oferecido em nossa loja atenda aos mais altos padrões de qualidade e estilo.</p>
+            <p>Acreditamos que cada detalhe faz a diferença. Por isso, nossas coleções são escolhidas a dedo, sempre com o objetivo de inspirar e realçar a confiança e a elegância natural de nossas clientes.</p>
+            <p>Venha nos visitar e descubra por que a Brilho de Princesa é a escolha perfeita para você. Estamos localizados no coração da cidade, prontos para recebê-la com todo o carinho e atenção que você merece.</p>
+            <h2><strong>Nossa História</strong></h2>
+            <p>A ideia da Brilho de Princesa surgiu em uma tarde de verão, quando nossa fundadora, Maria Clara, percebeu a falta de opções de moda feminina acessível e de qualidade em sua cidade. Com uma paixão por moda e um desejo de empreender, Maria Clara decidiu criar sua própria loja, que rapidamente se tornou um sucesso.</p>
+            <p>Hoje, a Brilho de Princesa continua a crescer, sempre fiel ao compromisso de oferecer o melhor em moda feminina. Nossa equipe dedicada trabalha incansavelmente para trazer novidades e manter a qualidade que nossas clientes tanto amam.</p>
+            <p>Obrigado por fazer parte da nossa história. Esperamos continuar a servi-la e fazer parte de momentos especiais da sua vida.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Brilho de Princesa. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

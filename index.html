@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brilho de Princesa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon/roupa-feminina.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h3>Brilho de Princesa</h3>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="#" id="carrinho-link"><span class="carrinho-icon">🛒 (0)</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="lista-roupas">
+            <h2>Roupas</h2>
+            <ul id="lista-roupas-container"></ul>
+        </section>
+
+        <button id="abrir-modal-roupa" class="abrir-modal">Adicionar Nova Roupa</button>
+
+        <div id="modal-roupa" class="modal">
+            <div class="modal-content">
+                <span class="fechar-modal" id="fechar-modal-roupa">×</span>
+                <h2>Adicionar Nova Roupa</h2>
+                <form id="form-roupa" class="form-roupa">
+                    <label for="nome-roupa">Nome:</label>
+                    <input type="text" id="nome-roupa" required>
+
+                    <label for="tamanho-roupa">Tamanho:</label>
+                    <input type="text" id="tamanho-roupa" required>
+
+                    <label for="descricao-roupa">Descrição:</label>
+                    <textarea id="descricao-roupa" required></textarea>
+
+                    <label for="preco-roupa">Preço:</label>
+                    <input type="number" id="preco-roupa" required>
+
+                    <label for="imagem-roupa">URL da Imagem:</label>
+                    <input type="url" id="imagem-roupa" required>
+
+                    <button type="submit">Adicionar</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="modal-carrinho" class="modal">
+            <div class="modal-content">
+                <span class="fechar-modal">×</span>
+                <h2>Meu Carrinho</h2>
+                <ul id="itens-carrinho"></ul>
+                <p id="total-carrinho">Total: R$ 0.00</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Brilho de Princesa. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
